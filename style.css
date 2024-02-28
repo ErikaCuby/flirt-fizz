@@ -1,41 +1,45 @@
 body {
-background-color: #b71f4a0a;
-color: rgb(16, 14, 71);
-font-family: Raleway;
+  background-color: #b71f4a0a;
+  color: rgb(16, 14, 71);
+  font-family: Raleway;
 }
 .container {
-  margin: 120px auto;
+  margin: 80px auto;
   max-width: 600px;
 }
 header {
-    margin: 50px;
-    text-align: center;
-    line-height: 10px;
+  margin: 20px;
+  text-align: center;
+  line-height: 2px;
 }
 .title {
-    font-weight: bold;
-    font-size: 30px;
+  font-family: Great vibes;
+  font-weight: bold;
+  font-size: 50px;
 }
 .subtitle {
-    font-size: 15px;
-    color: #0400018a;
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.7;
 }
-form {
-  padding: 30px;
+.form-container {
   background-color: white;
+  padding: 20px;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
   border-radius: 10px;
+  margin-bottom: 20px;
+}
+form {
   display: flex;
-  margin-bottom: 30px;
 }
 .word-input {
   padding: 14px;
-  border: 1px solid rgba(39, 33, 66, 0.5);
+  border: 1px solid rgba(39, 33, 66, 0.472);
   width: 80%;
-  font-size: 16px;
   border-radius: 50px;
   line-height: 20px;
-  color: #272044;
+  color: #272044ae;
+  font-size: 16px;
 }
 
 .submit {
@@ -48,6 +52,10 @@ form {
   border-radius: 50px;
   padding: 14px 24px;
 }
+.examples {
+  font-size: 13px;
+  color: #27204477;
+}
 
 .pick-up-line {
   font-size: 16px;
@@ -56,7 +64,24 @@ form {
   line-height: 2;
   border-left: 3px solid #b71f49;
   box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
-    border-radius: 10px;
+  border-radius: 10px;
+}
+.hidden {
+    display: none;
+}
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
 
 footer {
@@ -66,7 +91,7 @@ footer {
   opacity: 0.7;
 }
 a {
-    text-decoration: none;
-    color: #b71f49;
-    font-weight: bold;
+  text-decoration: none;
+  color: #b71f49;
+  font-weight: bold;
 }

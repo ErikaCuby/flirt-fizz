@@ -9,29 +9,43 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=News+Cycle:wght@400;700&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=News+Cycle:wght@400;700&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
     <link rel="stylesheet" href="style.css" />
-    <title>Poetic Prodigy</title>
+    <title>Flirt Fizz</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <p class="title">Poetic Prodigy</p>
-        <p class="subtitle">AI Poem Generator Where Words Flow Freely!</p>
+        <p class="title">Flirt Fizz</p>
+        <p class="subtitle">
+          A Funny AI Pick Up Line Generator<br />For Fizzing Up Your Flirt Game
+          with Lines!
+        </p>
       </header>
       <main>
-        <form id="form">
-          <input
-            type="text"
-            required
-            autofocus
-            placeholder="Write down few words"
-            class="word-input"
-          />
-          <input type="submit" value="Get poetical" class="submit" />
-        </form>
-        <div class="pick-up-line" id="pick-up-line"></div>
+        <div class="form-container">
+          <form id="form">
+            <input
+              type="text"
+              required
+              autofocus
+              placeholder="What would you like to compliment"
+              class="word-input"
+              id="pick-up-input"
+            />
+            <input type="submit" value="Get poetical" class="submit" />
+          </form>
+          <p class="examples">i.e.: smile, eyes or velvet dress</p>
+        </div>
+        <div class="pick-up-line hidden" id="pick-up-line"></div>
       </main>
 
       <footer>
