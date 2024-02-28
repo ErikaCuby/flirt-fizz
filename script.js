@@ -19,8 +19,7 @@ function generatePickUp(event) {
 
   let pickUpElement = document.querySelector("#pick-up-line");
   pickUpElement.classList.remove("hidden");
-  pickUpElement.innerHTML =
-    `<div class="generating">Generating the Pick Up Line about ${pickUpInput.value}.</div>`;
+  pickUpElement.innerHTML = `<div class="generating">❤️ Generating the Pick Up Line about ${pickUpInput.value}.</div>`;
 
   axios.get(apiUrl).then(displayPickUp);
 }
